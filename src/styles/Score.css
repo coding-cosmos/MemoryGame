@@ -1,6 +1,6 @@
 
 .counter{
-    border: 2px solid #FFF5E0;
+    border: 1px solid #FFF5E0;
     padding: .5rem 1rem;
     border-radius: 2rem;
     display: flex;
@@ -9,4 +9,6 @@
     justify-content: space-between;
     font-weight: bold;
     font-family: 'Shadows Into Light';
+    background-color: #FFF5E0;
+    color: #141E46;
 }
