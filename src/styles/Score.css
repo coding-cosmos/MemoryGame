@@ -1,0 +1,12 @@
+
+.counter{
+    border: 2px solid #FFF5E0;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: 'Shadows Into Light';
+}
