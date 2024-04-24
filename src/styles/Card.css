@@ -1,0 +1,29 @@
+.card {
+    border: 2px solid black;
+    border-radius: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .5rem;
+
+    padding: 1rem;
+ }
+
+.pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic>img{
+    width: 200px;
+    height: 200px ;
+}
+
+.name{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Caveat";
+}
