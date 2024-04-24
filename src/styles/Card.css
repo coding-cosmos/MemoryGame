@@ -1,5 +1,5 @@
 .card {
-    border: 2px solid black;
+    border: 2px solid #141E46;
     border-radius: 2rem;
     
     display: flex;
@@ -8,6 +8,8 @@
     gap: .5rem;
 
     padding: 1rem;
+
+    box-shadow: 0px 0px 2px 1px #141E46 ;
  }
 
 .pic{
