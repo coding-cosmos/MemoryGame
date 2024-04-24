@@ -50,3 +50,12 @@
     border-radius: 2rem;
     color: #141E46;
 }
+
+.message{
+    color: gray;
+    font-family: 'Shadows Into Light';
+    text-align: center;
+}
+.message .bold{
+    font-weight: bold;
+}
