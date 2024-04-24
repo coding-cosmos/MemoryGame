@@ -15,8 +15,8 @@ function App() {
             <span className="logo-text">MemGame</span>
           </div>
           <div className="counter-container">
-            <Score name="current score" score={currentScore}/>
-            <Score name="high score" score={hgihScore}/>
+            <Score name="Current Score" score={currentScore}/>
+            <Score name="High Score" score={hgihScore}/>
           </div>
         </nav>
       </div>
