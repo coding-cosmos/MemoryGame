@@ -1,13 +1,13 @@
 import "../styles/CardsHolder.css";
 import { Card } from "./Card";
-import { randomInRange } from "../scripts/Utils";
+import { randomInRange,numberOfElement } from "../scripts/Utils";
 import { useState } from "react";
 
-export function CardsHolder() {
+export function CardsHolder({ setCurrentScore,setHighScore}) {
   const [ clicked, setClicked ] = useState(false);
   const [ cardsState, setCardsState ] = useState([]);
 
-  function handleClick(event, index) {
+  function handleClick(index) {
     // Randomize the cards due to state change
     clicked ? setClicked(false) : setClicked(true);
 
@@ -15,15 +15,17 @@ export function CardsHolder() {
     if (cardsState[ index ] == true) {
       setCardsState([]);
       // update current score counter
+      setCurrentScore(0);
       // set high score counter
+      setHighScore(numberOfElement(cardsState,true));
     } else {
        let temp = cardsState;
        temp[index] = true;
        setCardsState(temp);
-       console.log(temp)
+
       
       // update current score counter
-      // update high score counter
+      setCurrentScore(numberOfElement(cardsState,true));
     }
      
   }
@@ -35,8 +37,8 @@ export function CardsHolder() {
           <Card
             index={index}
             key={index}
-            onClick={(e) => {
-              handleClick(e, index);
+            onClick={() => {
+              handleClick(index);
             }}
           />
         );
