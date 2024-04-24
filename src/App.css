@@ -1,48 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10fr ;
-    gap:1rem;
+    grid-template-rows: 1fr 10fr;
+    gap: 1rem;
     background-color: #FFF5E0;
     padding: 1rem;
 }
 
-.nav>nav{
+.nav>nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius:2rem;
+    border-radius: 2rem;
     padding: .5rem 1.5rem;
     background-color: #141E46;
     color: #FFF5E0;
     justify-content: space-between;
 }
-.nav .logo{
+
+.nav .logo {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.nav .logo>.logo-text{
+
+.nav .logo>.logo-text {
     font-size: 2rem;
     font-family: 'Shadows Into Light';
 }
-.nav .logo>img{
+
+.nav .logo>img {
     width: 2rem;
 }
 
-.counter-container{
+.counter-container {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
 }
 
-.main{
+.main {
     border-radius: 2rem;
     color: #141E46;
 }

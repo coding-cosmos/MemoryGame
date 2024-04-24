@@ -4,13 +4,13 @@ import { CardsHolder } from "./components/CardsHolder";
 import { Score } from "./components/Score";
 
 function App() {
-  const [ currentScore, setCurrentScore ] = useState(0);
-  const [ highScore, setHighScore ] = useState(0);
+  const [currentScore, setCurrentScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
 
   function handleHighScore(score) {
     score > highScore ? setHighScore(score) : "";
   }
-  
+
   return (
     <div className="container">
       <div className="nav">
@@ -20,14 +20,17 @@ function App() {
             <span className="logo-text">MemGame</span>
           </div>
           <div className="counter-container">
-            <Score name="Current Score" score={currentScore}/>
-            <Score name="High Score" score={highScore}/>
+            <Score name="Current Score" score={currentScore} />
+            <Score name="High Score" score={highScore} />
           </div>
         </nav>
       </div>
       <div className="main">
         <section className="game">
-          <CardsHolder setCurrentScore={setCurrentScore} setHighScore={handleHighScore}/>
+          <CardsHolder
+            setCurrentScore={setCurrentScore}
+            setHighScore={handleHighScore}
+          />
         </section>
       </div>
     </div>

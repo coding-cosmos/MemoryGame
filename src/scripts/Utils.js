@@ -9,7 +9,6 @@ export function randomInRange(n) {
   return range;
 }
 
-
-export function numberOfElement(array,value) {
+export function numberOfElement(array, value) {
   return array.filter((element) => element == value).length;
 }
