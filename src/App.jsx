@@ -5,7 +5,12 @@ import { Score } from "./components/Score";
 
 function App() {
   const [ currentScore, setCurrentScore ] = useState(0);
-  const [ hgihScore, setHighScore ] = useState(0);
+  const [ highScore, setHighScore ] = useState(0);
+
+  function handleHighScore(score) {
+    score > highScore ? setHighScore(score) : "";
+  }
+  
   return (
     <div className="container">
       <div className="nav">
@@ -16,13 +21,13 @@ function App() {
           </div>
           <div className="counter-container">
             <Score name="Current Score" score={currentScore}/>
-            <Score name="High Score" score={hgihScore}/>
+            <Score name="High Score" score={highScore}/>
           </div>
         </nav>
       </div>
       <div className="main">
         <section className="game">
-          <CardsHolder setCurrentScore={setCurrentScore} setHighScore={setHighScore}/>
+          <CardsHolder setCurrentScore={setCurrentScore} setHighScore={handleHighScore}/>
         </section>
       </div>
     </div>
