@@ -25,7 +25,8 @@ export function CardsHolder({ setCurrentScore,setHighScore}) {
 
       
       // update current score counter
-      setCurrentScore(numberOfElement(cardsState,true));
+      setCurrentScore(numberOfElement(cardsState, true));
+      setHighScore(numberOfElement(cardsState, true));
     }
      
   }
