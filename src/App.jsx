@@ -5,7 +5,7 @@ function App() {
     <div className="container">
       <div className="nav">
         <nav>
-          <div className="logo"><img src="../public/memory.png" alt="" />
+          <div className="logo"><img src="/memory.png" alt="" />
             <span className="logo-text">MemGame</span>
           </div>
           <div className="counter-container">counters</div>
