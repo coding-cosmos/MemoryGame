@@ -27,6 +27,7 @@ function App() {
       </div>
       <div className="main">
         <section className="game">
+          <p className="message"><span className="bold">Test your memory!!!!</span>! <span>Click everytime on a new Pokemon to score high...</span></p>
           <CardsHolder
             setCurrentScore={setCurrentScore}
             setHighScore={handleHighScore}
