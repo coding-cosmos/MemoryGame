@@ -1,13 +1,17 @@
 .counter {
-    border: 1px solid #FFF5E0;
-    padding: .5rem 1rem;
-    border-radius: 2rem;
+    padding: .5em 1em;
+    border-radius: 2em;
+
     display: flex;
     align-items: center;
-    gap: 2rem;
     justify-content: space-between;
+    gap: 1em;
+    
     font-weight: bold;
     font-family: 'Shadows Into Light';
+    text-wrap: nowrap;
+    font-size: clamp(.75rem,4vw,1.5rem);
+    
     background-color: #FFF5E0;
     color: #141E46;
 }
