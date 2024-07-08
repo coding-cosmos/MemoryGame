@@ -13,8 +13,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="nav">
-        <nav>
+      <div className="header">
           <div className="logo">
             <img src="/memory.png" alt="" />
             <span className="logo-text">MemGame</span>
@@ -23,11 +22,10 @@ function App() {
             <Score name="Current Score" score={currentScore} />
             <Score name="High Score" score={highScore} />
           </div>
-        </nav>
       </div>
       <div className="main">
         <section className="game">
-          <p className="message"><span className="bold">Test your memory!!!!</span>! <span>Click everytime on a new Pokemon to score high...</span></p>
+          <p className="message"><span className="bold">Test your memory!!!!</span> <br /><span>Click everytime on a new Pokemon to score high...</span></p>
           <CardsHolder
             setCurrentScore={setCurrentScore}
             setHighScore={handleHighScore}
