@@ -4,46 +4,54 @@
     box-sizing: border-box;
     margin: 0px;
 }
-
+#root{
+    background-color: #FFF5E0;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4rem 10fr;
-    gap: 1rem;
-    background-color: #FFF5E0;
+    grid-template-rows: auto 1fr;
     padding: 1rem;
+    align-items: center;
 }
 
-.nav>nav {
+.header {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: #141E46;
+  padding: .5em 1em;
+  border-radius: 1em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width:700px) {
+    flex-direction: column;
+  }
+}
+
+.header .logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    border-radius: 2rem;
-    padding: .5rem 1.5rem;
-    background-color: #141E46;
+    gap: 10px;
     color: #FFF5E0;
-    justify-content: space-between;
 }
 
-.nav .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.nav .logo>.logo-text {
-    font-size: 2rem;
+.header .logo>.logo-text {
+    font-size: clamp(1.5rem,10vw,3rem);
     font-family: 'Shadows Into Light';
 }
 
-.nav .logo>img {
-    width: 2rem;
+.header .logo>img {
+    width: clamp(1.5rem,8vw,2.5rem);
 }
 
 .counter-container {
     display: flex;
-    gap: 2rem;
     justify-content: space-between;
+    gap: 1em;
 }
 
 .main {
