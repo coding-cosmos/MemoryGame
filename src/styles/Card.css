@@ -24,7 +24,7 @@
 
 .name {
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.5rem,8vw,2.5rem);
     font-weight: bold;
     font-family: "Caveat";
 }
